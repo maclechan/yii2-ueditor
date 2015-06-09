@@ -29,7 +29,6 @@ then add
 
 to the return array of your `composer/autoload_psr4.php` file
 
-'macle\\ueditor\\' => array($vendorDir . '/macle/yii2-ueditor'),
 
 notes: all of the files in the `vendor/macle/yii2-ueditor/` 
 
@@ -38,11 +37,17 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
+view
 ```php
+
 <?php
 use macle\ueditor\Ueditor;
 
-echo Ueditor::widget(['id'=>"newstext"]); 
+echo Ueditor::widget(['id'=>"Test[desc]"]); 
 
 ?>
+
+or
+<?= $form->field($model, 'desc')->widget('macle\ueditor\Ueditor',['id'=>'Test[desc]']); ?>
+
 ```
