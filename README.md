@@ -51,3 +51,7 @@ or
 <?= $form->field($model, 'desc')->widget('macle\ueditor\Ueditor',['id'=>'Test[desc]']); ?>
 
 ```
+
+
+email  maclechan@qq.com
+qq     429140141
