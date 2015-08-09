@@ -42,14 +42,36 @@ view
 
 <?php
 use macle\ueditor\Ueditor;
-
-echo Ueditor::widget(['id'=>"Test[desc]"]); 
+echo UEditor::widget([
+	'id'=>"Test[content]",
+    'events' => [
+        //编辑区域大小
+        //'initialFrameHeight' => '4800',
+        //设置语言
+        'lang' =>'en', //中文为 zh-cn
+        //定制菜单
+        'toolbars' => [
+            [
+                'fullscreen', 'source', 'undo', 'redo', '|',
+                'fontsize',
+                'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'removeformat',
+                'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|',
+                'forecolor', 'backcolor', '|',
+                'lineheight', '|',
+                'indent', '|'
+            ],
+        ],
+        
+    ],
+    'ucontent'=>$model->content,
+]);
 
 ?>
 
 or
-<?= $form->field($model, 'desc')->widget('macle\ueditor\Ueditor',['id'=>'Test[desc]']); ?>
-
+<?= $form->field($model, 'content')->widget('macle\ueditor\Ueditor',['id'=>'Test[content]']); ?>
+//在编辑时，显示默认值
+<?= $form->field($model, 'content')->widget('macle\ueditor\Ueditor',['id'=>'Test[content]','ucontent'=>$model->content])->label(false); ?>
 ```
 
 
