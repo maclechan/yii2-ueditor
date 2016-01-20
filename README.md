@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist macle/yii2-ueditor "*"
+composer require --prefer-dist maclechan/yii2-ueditor "*"
 ```
 
 or add
 
 ```
-"macle/yii2-ueditor": "*"
+"maclechan/yii2-ueditor": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -24,13 +24,13 @@ to the require section of your `composer.json` file.
 then add
 
 ```
-'macle\\ueditor\\' => array($vendorDir . '/macle/yii2-ueditor'),
+'macle\\ueditor\\' => array($vendorDir . '/maclechan/yii2-ueditor'),
 ```
 
 to the return array of your `composer/autoload_psr4.php` file
 
 
-notes: all of the files in the `vendor/macle/yii2-ueditor/` 
+notes: all of the files in the `vendor/maclechan/yii2-ueditor/` 
 
 Usage
 -----
