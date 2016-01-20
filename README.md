@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist maclechan/yii2-ueditor "*"
+composer require --prefer-dist macle/yii2-ueditor "*"
 ```
 
 or add
 
 ```
-"maclechan/yii2-ueditor": "*"
+"macle/yii2-ueditor": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -24,13 +24,13 @@ to the require section of your `composer.json` file.
 then add
 
 ```
-'maclechan\\ueditor\\' => array($vendorDir . '/maclechan/yii2-ueditor'),
+'macle\\ueditor\\' => array($vendorDir . '/macle/yii2-ueditor'),
 ```
 
 to the return array of your `composer/autoload_psr4.php` file
 
 
-notes: all of the files in the `vendor/maclechan/yii2-ueditor/` 
+notes: all of the files in the `vendor/macle/yii2-ueditor/` 
 
 Usage
 -----
@@ -41,7 +41,7 @@ view
 ```php
 
 <?php
-use maclechan\ueditor\Ueditor;
+use macle\ueditor\Ueditor;
 echo UEditor::widget([
 	'id'=>"Test[content]",
     'events' => [
@@ -69,11 +69,11 @@ echo UEditor::widget([
 ?>
 
 or
-<?= $form->field($model, 'content')->widget('maclechan\ueditor\Ueditor',['id'=>'Test[content]']); ?>
+<?= $form->field($model, 'content')->widget('macle\ueditor\Ueditor',['id'=>'Test[content]']); ?>
 //在编辑时，显示默认值
-<?= $form->field($model, 'content')->widget('maclechan\ueditor\Ueditor',['id'=>'Test[content]','ucontent'=>$model->content])->label(false); ?>
+<?= $form->field($model, 'content')->widget('macle\ueditor\Ueditor',['id'=>'Test[content]','ucontent'=>$model->content])->label(false); ?>
 ```
 
 
-email  maclechanchan@qq.com
+email  maclechan@qq.com
 qq     429140141
