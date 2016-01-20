@@ -8,7 +8,7 @@
     "minimum-stability": "dev",
     "authors": [
         {
-            "name": "macle",
+            "name": "maclechan",
             "email": "maclechan@qq.com",
             "qq" : "429140141"
         }
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "macle\\ueditor\\": ""
+            "maclechan\\ueditor\\": ""
         }
     }
 }

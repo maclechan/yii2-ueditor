@@ -1,14 +1,14 @@
 <?php
-namespace macle\ueditor;
+namespace maclechan\ueditor;
 
 use yii\web\AssetBundle;
-use macle;
+use maclechan;
 
 class UeditorAsset extends AssetBundle{
     /*
      * @inheritdoc
      */
-    public $sourcePath='@macle\ueditor\assets';
+    public $sourcePath='@maclechan\ueditor\assets';
 
     public $css=[
         'css/ueditor.min.css',  
