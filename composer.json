@@ -1,5 +1,5 @@
 {
-    "name": "macle/yii2-ueditor",
+    "name": "maclechan/yii2-ueditor",
     "description": "Ueditor for Yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","editor","ueditor","upload"],
