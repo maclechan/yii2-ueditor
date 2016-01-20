@@ -1,19 +1,19 @@
 <?php
 /**
  * 
- * @author 	maclechan 
- * Email 	maclechanchan@qq.com
+ * @author 	macle 
+ * Email 	maclechan@qq.com
  * qq		429140141
  *
  */
-namespace maclechan\ueditor;
+namespace macle\ueditor;
 
 use Yii;
 use yii\widgets\InputWidget;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\View;
-use maclechan\ueditor\UeditorAsset;
+use macle\ueditor\UeditorAsset;
 
 class Ueditor extends InputWidget
 {
@@ -40,7 +40,7 @@ class Ueditor extends InputWidget
     	}
     	
     	$this->events = $this->options;
-    	\Yii::setAlias('@maclechan\ueditor\assets', '@vendor/maclechan/yii2-ueditor/assets');
+    	\Yii::setAlias('@macle\ueditor\assets', '@vendor/macle/yii2-ueditor/assets');
         if(empty($this->name)){
             $this->name=$this->hasModel() ? Html::getInputName($this->model, $this->attribute): $this->id;
         }
